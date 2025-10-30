@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0e0c0c;
+  --foreground: #282524;
+  --border: #353333;
+  --primary: #7fffd4;
+  --primary-hover: #5ad1b2;
+  --text-emphasis: #9fd1c8;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-emphasis: var(--text-emphasis);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --breakpoint-large: 1440px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--text-primary);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Prevent horizontal overflow caused by wide elements during development */
+html,
+body {
+  overflow-x: hidden;
+}
+
+hr {
+  height: 8px;
 }
