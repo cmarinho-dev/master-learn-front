@@ -20,7 +20,7 @@ function Event() {
           aprendizado.
         </p>
         <div>
-          <Button label="Continuar Curso" />
+          <Button label="Aproveitar Oferta" />
         </div>
       </div>
       <div className="rounded-md bg-cyan-200 overflow-hidden">
