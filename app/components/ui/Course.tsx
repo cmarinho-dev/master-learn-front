@@ -14,14 +14,15 @@ function Course(props: {
         <div className="mb-4 overflow-hidden rounded-md w-full">
           <img
             src={props.coverUrl || "/placeholder.png"}
-            alt={props.name}
+            alt={`Capa do curso ${props.name}`}
+            loading="lazy"
             className="w-full h-44 object-cover block"
           />
         </div>
         <Tag textContent={props.author} additionalClass="ms-[5px] mb-3" />
-        <h1 className="font-semibold text-xl px-2 mb-1 line-clamp-2">
+        <h3 className="font-semibold text-xl px-2 mb-1 line-clamp-2">
           {props.name}
-        </h1>
+        </h3>
         <p className="text-sm text-text-secondary px-2 mb-2 line-clamp-3">
           {props.description}
         </p>
