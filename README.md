@@ -1,38 +1,93 @@
-TESTAR COM STORYBOOK
+<div align="center">
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Master Learn Front
 
-## Getting Started
+[Demo Online](#demo-online) • [Instalação](#instalação) • [Scripts](#scripts) • [Tecnologias](#tecnologias)
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8?logo=tailwindcss&logoColor=white)
+![Deploy](https://img.shields.io/badge/deploy-Vercel-black?logo=vercel&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+</div>
+
+---
+
+### Sumário
+- [Introdução](#introdução)
+- [Demo Online](#demo-online)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Scripts](#scripts)
+- [Tecnologias](#tecnologias)
+- [Saiba Mais](#saiba-mais)
+
+# Introdução
+
+**Master Learn Front** é o frontend do projeto **Master Learn**, construído com **Next.js 16** e **React 19**. É o consumidor da API [`master-learn-backend`](https://github.com/cmarinho-dev/master-learn-backend), servida em FastAPI.
+
+# Demo Online
+
+A aplicação está publicada na Vercel:
+
+👉 [master-learn-phi.vercel.app](https://master-learn-phi.vercel.app)
+
+# Pré-requisitos
+
+- **Node.js**;
+- Um gerenciador de pacotes (`npm`, `yarn`, `pnpm` ou `bun`).
+
+# Instalação
+
+```sh
+git clone https://github.com/cmarinho-dev/master-learn-front.git
+cd master-learn-front
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Inicie o servidor de desenvolvimento:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abra [`http://localhost:3000`](http://localhost:3000) no navegador para ver o resultado. A página pode ser editada a partir de `app/page.tsx` — as alterações aparecem automaticamente.
 
-## Learn More
+O projeto usa [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) para otimizar e carregar a fonte **Geist**.
 
-To learn more about Next.js, take a look at the following resources:
+# Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Comando | Descrição |
+| --- | --- |
+| `npm run dev` | Inicia o servidor de desenvolvimento |
+| `npm run build` | Gera o build de produção |
+| `npm run start` | Sobe o servidor com o build de produção |
+| `npm run lint` | Executa o ESLint no projeto |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Tecnologias
 
-## Deploy on Vercel
+- **Next.js 16** — framework React (App Router);
+- **React 19** + **React DOM**;
+- **TypeScript**;
+- **TailwindCSS 4** (via `@tailwindcss/postcss`) — estilização;
+- **lucide-react** — ícones;
+- **ESLint** — padronização e qualidade de código.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Saiba Mais
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para aprender mais sobre o Next.js, confira:
+
+- [Documentação do Next.js](https://nextjs.org/docs) — funcionalidades e API;
+- [Learn Next.js](https://nextjs.org/learn) — tutorial interativo;
+- [Repositório do Next.js no GitHub](https://github.com/vercel/next.js).
+
+O deploy mais simples de uma aplicação Next.js é através da [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) — veja a [documentação de deploy do Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para mais detalhes.
+
+---
+
+<div align="center">
+
+Feito com Next.js + React, parte do ecossistema Master Learn.
+
+</div>
