@@ -6,10 +6,10 @@ function Event() {
   return (
     <Container
       additionalClass={
-        "flex flex-wrap justify-between items-center gap-6 overflow-hidden"
+        "flex flex-wrap justify-between items-stretch gap-6 overflow-hidden"
       }
     >
-      <div className="flex flex-col gap-4 p-6 md:p-10 text-wrap max-w-3xl flex-1 min-w-[280px]">
+      <div className="flex flex-col gap-4 p-6 md:p-10 text-wrap max-w-xl flex-1 min-w-[280px]">
         <h1 className="text-2xl md:text-3xl font-bold leading-tight">
           O DIA CHEGOU: <span className="text-emphasis">MASTER LEARN</span>{" "}
           está disponível!
@@ -27,14 +27,14 @@ function Event() {
           <Button label="Aproveitar Oferta" />
         </div>
       </div>
-      <div className="rounded-md overflow-hidden w-full lg:w-auto lg:max-w-[550px]">
+      <div className="rounded-md overflow-hidden w-full lg:w-auto lg:max-w-[550px] self-stretch">
         <Image
           src={"/event.jpg"}
           alt="Banner de lançamento da plataforma Master Learn"
           width={550}
           height={280}
           priority
-          className="w-full h-auto object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
     </Container>
